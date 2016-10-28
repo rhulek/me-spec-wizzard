@@ -1,0 +1,49 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<!--
+`me-spec-wizzard`
+Mates Eshop Specification Wizzard
+
+@demo demo/index.html 
+-->
+
+<dom-module id="me-spec-wizzard">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Step m/n</h2>
+
+    <template is="dom-if" if="true">
+      <h3>raz</h3>
+    </template>
+
+    <template is="dom-if" if="true">
+      <h3>dva</h3>
+    </template>
+
+    <template is="dom-if" if="true">
+      <h3>tri</h3>
+    </template>
+
+    <template is="dom-if" if="true">
+      <h3>ctyri</h3>
+    </template>
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'me-spec-wizzard',
+
+      properties: {
+        specificationModel: {
+          type: Object
+        },
+      },
+
+    });
+  </script>
+</dom-module>
